@@ -2,8 +2,8 @@
 - hosts: webservers
   become: true
   tasks:
-    - name: Install Apache (httpd) package
-      yum:
+    - name: Install Apache (httpd) package using dnf
+      dnf:
         name: httpd
         state: present
 
